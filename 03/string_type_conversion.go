@@ -9,4 +9,14 @@ func main() {
 	var s2 string = string(b)
 	fmt.Println(s)
 	fmt.Println(s2)
+	stringToSlice()
+}
+
+// stringToSlice
+func stringToSlice() {
+	var s string = "Hello, 🌞"
+	var bs []byte = []byte(s)
+	var rs []rune = []rune(s)
+	fmt.Println(bs)
+	fmt.Println(rs)
 }
