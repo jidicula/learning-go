@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := build
 
-.PHONY: build run-ok run-cancel
+.PHONY: build run-ok run-cancel clean
 
 build:
 	go build
@@ -10,3 +10,6 @@ run-ok: build
 
 run-cancel: build
 	./context_cancel true
+
+clean:
+	rm context_cancel
